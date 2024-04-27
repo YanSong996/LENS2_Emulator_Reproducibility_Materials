@@ -283,15 +283,111 @@ The Community Earth System Model version 2 Large Ensembles (CESM2-LENS2) represe
 
     * Daily surface temperature simulations used in this work are:
       
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
 
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.013.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.014.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.015.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
+
+   "b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.016.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20150101-20241231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20150101-20241231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20350101-20441231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20350101-20441231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20550101-20641231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20550101-20641231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20750101-20841231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20750101-20841231.nc/netcdf/header.html)
+
+    "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20950101-21001231.nc"
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
 
 ### SSP370 data (csv)
+The SSP370 data used in this work are estimated using CMIP6 concentrations are emissions and can be accessed at the Zenodo link: https://zenodo.org/record/3515339. The data are available as “ERF_ssp370_1750-2500.csv” and are also provided in our code repository “LENS2_Data” under the same name.
+
