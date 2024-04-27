@@ -19,10 +19,13 @@ The Community Earth System Model version 2 Large Ensembles (CESM2-LENS2) represe
 * This work utilized up to ten surface temperature simulations obtained from a subset of 20 members that were micro-initialized starting from the year 1251. Each member is created by introducing random perturbations to the atmospheric potential temperature field. 
 
     * Monthly surface temperature simulations used in this work are:
+
     “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.201501-202412.nc” 
     (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.201501-202412.nc/netcdf/header.html)
+  
     “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.202501-203412.nc” 
 (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.202501-203412.nc/netcdf/header.html)
+
 “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.203501-204412.nc” 
 (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.203501-204412.nc/netcdf/header.html)
 “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.204501-205412.nc” 
