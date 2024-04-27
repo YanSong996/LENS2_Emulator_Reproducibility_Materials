@@ -1,4 +1,4 @@
-# Data
+![image](https://github.com/YanSong996/LENS2_Emulator_Reproducibility_Materials/assets/146948818/c114d53f-e884-4fd3-a0be-490d1486b8c5)# Data
 This file provides details about the data, how to download and process the data.
 
 ## Abstract
@@ -18,7 +18,36 @@ The Community Earth System Model version 2 Large Ensembles (CESM2-LENS2) represe
 
 * This work utilized up to ten surface temperature simulations obtained from a subset of 20 members that were micro-initialized starting from the year 1251. Each member is created by introducing random perturbations to the atmospheric potential temperature field. 
 
-Monthly surface temperature simulations used in this work are:
+    * Monthly surface temperature simulations used in this work are:
+    “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.201501-202412.nc” 
+    (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.201501-202412.nc/netcdf/header.html)
+    “b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.202501-203412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.202501-203412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.203501-204412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.203501-204412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.204501-205412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.204501-205412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.205501-206412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.205501-206412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.206501-207412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.206501-207412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.207501-208412.nc”
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.207501-208412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.208501-209412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.208501-209412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.209501-210012.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.011.cam.h0.TS.209501-210012.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.201501-202412.nc” (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.201501-202412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.202501-203412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.202501-203412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.203501-204412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.203501-204412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.204501-205412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.204501-205412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.205501-206412.nc” 
+(https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.205501-206412.nc/netcdf/header.html)
+“b.e21.BSSP370smbb.f09_g17.LE2-1251.012.cam.h0.TS.206501-207412.nc” 
+
 
 
 
