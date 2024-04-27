@@ -388,6 +388,9 @@ The Community Earth System Model version 2 Large Ensembles (CESM2-LENS2) represe
     "b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20950101-21001231.nc"
 (https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS/file/b.e21.BSSP370smbb.f09_g17.LE2-1251.017.cam.h1.TS.20950101-21001231.nc/netcdf/header.html)
 
-### SSP370 data (csv)
+### SSP370 data (CSV)
 The SSP370 data used in this work are estimated using CMIP6 concentrations are emissions and can be accessed at the Zenodo link: https://zenodo.org/record/3515339. The data are available as “ERF_ssp370_1750-2500.csv” and are also provided in our code repository “LENS2_Data” under the same name.
+
+## Data processing
+This subsection involves the detailed procedures for downloading and processing the data. The corresponding codes are available in the R file ``Data\underline{ }treatment.R" in the sub-repository ``LENS2\underline{ }Data", enabling users to follow the process directly. Please note that before downloading the data, you may need to log in the data website.
 
