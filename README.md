@@ -1,4 +1,4 @@
-![image](https://github.com/YanSong996/LENS2_Emulator_Reproducibility_Materials/assets/146948818/c114d53f-e884-4fd3-a0be-490d1486b8c5)# Data
+# Data
 This file provides details about the data, how to download and process the data.
 
 ## Abstract
