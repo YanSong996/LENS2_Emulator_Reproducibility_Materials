@@ -400,7 +400,7 @@ This subsection involves the detailed procedures for downloading and processing 
 3. The processed monthly simulations should be stored as "dat_em1_month.mat" through "dat_em10_month.mat" in the sub-repository "LENS2_Data/Monthly". Each file includes monthly surface temperature data from the year 2015 to 2100.
 4. The processed annual simulations should be stored as "dat_em1_year.mat" through "dat_em10_year.mat" in the sub-repository "LENS2_Data/Annual". Each file includes annual surface temperature data from the year 2015 to 2100. 
 
-#### Daily data
+### Daily data
 1. Download the daily surface temperature data listed above and store them in sub-repository "LENS2_Data/Raw".
 2. Use R codes for daily data in "Data_treatment.R" to process the data.
 3. The processed daily simulations should be stored as "dat_em1_day.mat" through "dat_em7_day.mat" in the sub-repository "LENS2_Data/Daily". Each file includes daily surface temperature data of the years 2020, 2040, 2060, 2080, and 2100.  
