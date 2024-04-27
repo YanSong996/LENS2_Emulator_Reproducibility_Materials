@@ -10,10 +10,10 @@ The Community Earth System Model version 2 Large Ensembles (CESM2-LENS2) represe
 
 - Surface temperature simulations at 3-hourly, 6-hourly, monthly, and daily scales, can be found in the atmosphere component of CESM2-LENS2. 
 
--- Monthly surface temperature simulations are avaliable at: 
+*** Monthly surface temperature simulations are avaliable at: 
 https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.TS.html
 
--- Daily surface temperature simulations are avaliable at:  
+*** Daily surface temperature simulations are avaliable at:  
 https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.daily_ave.TS.html
 
 - This work utilized up to ten surface temperature simulations obtained from a subset of 20 members that were micro-initialized starting from the year 1251. Each member is created by introducing random perturbations to the atmospheric potential temperature field. 
