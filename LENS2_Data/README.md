@@ -408,6 +408,5 @@ This subsection involves the detailed procedures for downloading and processing 
 ## "LENS2_Data" repository
 This repository consists of codes for processing the raw data and some data used in the inference process.
 1. "Data_treatment.R" provides R codes for processing the raw data and storing the processed data.
-2. Folders "Annual", "Monthly" and "Daily" are used to store the processed annual, monthly and daily simulations.
-3. "ERF_ssp370_1750-2500.csv" contains the SSP370 data.
-4. "Dat_loc.csv", "landid.csv", "phis.csv" and "thetas.csv" store the location information for the data, which can be obtained from the raw data and simple calculations.
+2. "ERF_ssp370_1750-2500.csv" contains the SSP370 data.
+3. "Dat_loc.csv", "landid.csv", "phis.csv" and "thetas.csv" store the location information for the data, which can be obtained from the raw data and simple calculations.
