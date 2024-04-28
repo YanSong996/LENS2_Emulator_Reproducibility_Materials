@@ -26,9 +26,16 @@ Figures 1 and S1 are used to illustrate the characteristics of surface temperatu
 15. Plot Figures S1(a)-S1(c) (about 1.8 seconds) and Figures S1(d)-S1(f) (about 1.7 seconds)
 
 ### Figure 2 in Section 3.2.1 (and Figure S2 in Section S3.2.3)
-Figures 2 and S2 are used to illustrate the performance of spherical harmonics transformation (SHT). 
+Figures 2 and S2 are used to illustrate the performance of spherical harmonics transformation (SHT). The total computational time for ploting Figures 2 and S2 is about 841.7 seconds. The intermediate outputs for Figure 2(f), which takes major time to reproduce, were saved to sub-repository "Figure2".
 
 1. Load the annual data and necessary information (about 5.2 seconds)
-2. Calculate one set of stochastic component $Z_9^{(1)}(L_i,l_j)$ and plot Figure 2(a)
+2. Calculate one set of stochastic component $Z_9^{(1)}(L_i,l_j)$ and plot Figure 2(a) (about 2.4 seconds)
+3. Do SHT for $Z_9^{(1)}(L_i,l_j)$ and plot Figure 2(b) (about 4.2 seconds for SHT)
+4. Do inverse SHT with Q=36 and plot Figure 2(c) (about 0.3 seconds for inverse SHT)
+5. Do inverse SHT with Q=72 and plot Figure 2(d) (about 0.4 seconds for inverse SHT)
+6. Do inverse SHT with Q=116 and plot Figure 2(e) (about 1.3 seconds for inverse SHT)
+7. Use LatticeKrig to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure 2(f) (about 814.5 seconds for LatticeKrig)
+8. Calculate one set of stochastic component $Z_9^{(3)}(L_i,l_j)$, do SHT and inverse SHT, and plot Figure S2(a) and S2(c) (about 6.0 seconds)
+9. Calculate one set of stochastic component $Z_{69}^{(1)}(L_i,l_j)$, do SHT and inverse SHT, and plot Figure S2(b) and S2(d) (about 7.4 seconds)
 
 
