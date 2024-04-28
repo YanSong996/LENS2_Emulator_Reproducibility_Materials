@@ -7,7 +7,7 @@ Please follow the README.md file in the sub-repository "LENS2_Data" to download 
 
 ## Step 2. Reproduce each section and figure sequentially
 ### Figure 1 in Section 2 (and Figure S1 in Section S2)
-Figures 1 and S1 are used to illustrate the characteristics of surface temperature simulations in different scales.
+Figures 1 and S1 are used to illustrate the characteristics of surface temperature simulations in different scales. All the intermediate outputs can be found in sub-repository "Figure1".
 1. Load the annual data and necessary information (about 5.2 seconds)
 2. Calculate annual ensemble mean to plot Figure 1(a) (about 1.9 seconds)
 3. Calculate annual ensemble sd to plot Figure 1(b) (about 3.8 seconds)
