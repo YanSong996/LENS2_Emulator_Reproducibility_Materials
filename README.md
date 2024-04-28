@@ -25,6 +25,10 @@ Figures 1 and S1 are used to illustrate the characteristics of surface temperatu
 14. Plot Figures 1(e)-1(g) (about 3.2 seconds)
 15. Plot Figures S1(a)-S1(c) (about 1.8 seconds) and Figures S1(d)-S1(f) (about 1.7 seconds)
 
+### Figure 2 in Section 3.2.1 (and Figure S2 in Section S3.2.3)
+Figures 2 and S2 are used to illustrate the performance of spherical harmonics transformation (SHT). 
 
+1. Load the annual data and necessary information (about 5.2 seconds)
+2. Calculate one set of stochastic component $Z_9^{(1)}(L_i,l_j)$ and plot Figure 2(a)
 
 
