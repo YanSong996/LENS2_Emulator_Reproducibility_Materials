@@ -61,7 +61,7 @@ Figure 4 illustrates the temporal and spatial dependence structures of the annua
 ### Figure 5 in Section 4.1 (and Figures S7 and S8 in Section S4.1.3)
 Figures 5, S7, and S8 illustrate the performance of the generated annual emulations. Assume that we keep all intermediate results of reproducing Figures 3 and 4. The total computational time for ploting Figures 5, S7, and S8 is about 362.7 seconds. All the intermediate outputs can be found in sub-repository "Annual/Outputs".
 
-1. Caculate the covaraince matrix $\tilde{U}$
+1. Caculate the covaraince matrix $\tilde{\bold U}$
 
 
 
