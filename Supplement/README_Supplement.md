@@ -26,6 +26,12 @@ Figure S4 validates the assumption of diagonal matrix $\Phi_p$. Here we take the
 1. Calculate the residuals of autoregressive model (about 0.2 seconds)
 2. Calculate p-values of the first temporal lag of the cross-correlation and plot Figure S4(a) (about 395.9 seconds)
 
+### Figure S5 in Section S4.1.1
+Please refer to the reproduction of Figure 3 in Section 4.1.
+
+### Figure S6 in Section S4.1.2
+
+
 
 
 
