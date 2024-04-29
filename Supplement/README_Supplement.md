@@ -2,7 +2,7 @@
 This file documents the artifacts associated with the Supplementary Materials and describes how to reproduce the findings. To reproduce all figures and results in the Supplementary Materials, please download and extract the provided "LENS2_Emulator_Reproducibility_Materials.zip", and then set your working directory to the folder "LENS2_Emulator_Reproducibility_Materials".
 
 ## Step 1. Download and process the data in sub-repository "LENS2_Data"
-Please follow the README.md file in the sub-repository "LENS2_Data" to download the raw data, process and store them using file “Data_treatment.R” in the "LENS2_Data". Processing montly and annual data together for each ensemble takes about 63 seconds. Processing daily data for each ensemble takes about 32.5 seconds.
+Please follow the README.md file in the sub-repository "LENS2_Data" to download the raw data, process and store them using file “Data_treatment.R” in the "LENS2_Data". Processing montly and annual data together for each ensemble takes about 63 seconds. Processing daily data for each ensemble takes about 32.5 seconds. 
 
 ## Step 2. Reproduce each section and figure sequentially
 ### Figure S1 in Section S2
@@ -31,7 +31,7 @@ Please refer to the reproduction of Figure 3 in Section 4.1.
 
 ### Figure S6 in Section S4.1.2
 Figure S6 illustrates the inference results of annual data obtained by HCBG. All the intermediate results can be found in sub-repository "Supplement/Huang/Annual/Outputs". Here we use outputs from https://github.com/hhuang90/stochastic_emulator 
-as initial values. The total computational time for ploting Figure S6 is about 113278.9 seconds without using the parallel. 
+as initial values. The total computational time for ploting Figure S6 is about 113278.9 seconds without using the parallel. Beyond Figure S6, other procedures for generating annual emulations using HCBG are provided in "Supplement/Huang/Annual/Huang_Annual.R".
 
 1. Load 7 ensembles of annual data and necessary information for HCBG (about 4.6 seconds)
 2. Model the mean trend and temporal dependence at each grid point and plot Figures S6(a) (about 2.0 seconds for each grid point $(L_i,l_j)$. We provide the intermediate result "Res_hatrhophi.csv".)
