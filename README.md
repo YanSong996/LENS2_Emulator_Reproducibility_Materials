@@ -59,9 +59,16 @@ Figure 4 illustrates the temporal and spatial dependence structures of the annua
 5. As the same as the above item but use another latitude (about 155.3 seconds)
 
 ### Figure 5 in Section 4.1 (and Figures S7 and S8 in Section S4.1.3)
-Figures 5, S7, and S8 illustrate the performance of the generated annual emulations. Assume that we keep all intermediate results of reproducing Figures 3 and 4. The total computational time for ploting Figures 5, S7, and S8 is about 362.7 seconds. All the intermediate outputs can be found in sub-repository "Annual/Outputs".
+Figures 5, S7, and S8 illustrate the performance of the generated annual emulations. Assume that we keep all intermediate results of reproducing Figures 3 and 4. The total computational time for ploting Figures 5, S7, and S8 is about 369.0 seconds. All the intermediate outputs can be found in sub-repository "Annual/Outputs".
 
-1. Caculate the covaraince matrix $\tilde{\bold U}$
+1. Caculate the covaraince matrix $\tilde{**U**}$ (about 0.4 seconds. We provide the intermediate result "U.mat".)
+2. Do Cholescky decompostion on $\tilde{**U**}$ (about 0.6 seconds)
+3. Generate $R'=7$ ensembles of annual emulations using 4 cores (about 207.8 seconds)
+4. Calculate $I_{uq}$ values using 4 cores and plot Figures 5(a) and 5(b) (about 119.1 seconds. We provide the intermediate result "Iuq_axialnon.csv".)
+5. Calculate $WD_S$ values using 4 cores and plot Figures 5(c) and 5(d) (about 31.1 seconds. We provide the intermediate result "WD_time.csv".)
+6. Compare ensemble means and sds of annual emulations with those of simulations and plot Figures S7(a) and S7(c) (or Figures S7(b) and S7(d)) (about 2.4 seconds)
+7. Compare time series of annual emulations with those of simulations and plot Figures S7(e) and S7(f) (0 seconds)
+8. Compare periodograms of emulations with those of simulations and plot Figure S8(a) (or S8(b)) (about 1.4 seconds)
 
 
 
