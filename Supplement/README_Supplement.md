@@ -6,10 +6,10 @@ Please follow the README.md file in the sub-repository "LENS2_Data" to download 
 
 ## Step 2. Reproduce each section and figure sequentially
 ### Figure S1 in Section S2
-Please refer to the reproducibility of Figure 1 in Section 2.
+Please refer to the reproduction of Figure 1 in Section 2.
 
 ### Figure S2 in Section S3.2.3
-Please refer to the reproducibility of Figure 2 in Section 3.2.1.
+Please refer to the reproduction of Figure 2 in Section 3.2.1.
 
 ### Figure S3 in Section S3.2.4
 Figure S3 illustrates the approximation performance of LatticeKrig and SHT, where Figures S3(d) and S3(b) are Figures 2(e) and 2(f), respectively. More details about choosing tuning parameters can be found in "Supplement/FigureS3/LatticeKrig_Annual.R" All intermediate outputs can be found in sub-repository "Supplement/FigureS3/Outputs". The total computational time for ploting Figure S3 (excluding Figures S3(d) and S3(b)) is about  seconds.
