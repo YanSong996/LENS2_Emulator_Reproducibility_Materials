@@ -42,4 +42,4 @@ Figures 2 and S2 are used to illustrate the performance of spherical harmonics t
 Figure 3 illustrates some inference results of the annual data. 
 
 1. Load R=10 ensembles of annual data and necessary information (about 11.0 seconds)
-2. Calculate I_{fit} values under different values of R and plot Figure 3(a)
+2. Calculate $I_{fit}$ values under different values of R and plot Figure 3(a)
