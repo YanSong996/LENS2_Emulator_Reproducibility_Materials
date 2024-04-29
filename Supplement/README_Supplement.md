@@ -38,7 +38,8 @@ as initial values. The total computational time for ploting Figure S6 is about 1
 3. Evaluate mean trend and sd at each grid point and plot Figure S6(b) (about 723.9 seconds. We provide the intermediate result "Sig_Annual.csv".)
 4. Model the longitude dependence at each latitude and plot Figure S6(c) (about 10.2 seconds for each latitude $L_i$, $i=1,\ldots,192$. We provide the intermediate result "Res_longLO.csv".)
 
-
+### Figures S7 and S8 in Section S4.1.3
+Please refer to the reproduction of Figure 5 in Section 4.1.
 
 
 
