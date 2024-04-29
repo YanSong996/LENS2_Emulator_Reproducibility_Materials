@@ -19,3 +19,23 @@ Figure S3 illustrates the approximation performance of LatticeKrig and SHT, wher
 3. Use LatticeKrig with nlevel=5 to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure S3(a) (about 180.1 seconds)
 4. Use SHT with Q=58 to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure S3(c) (about 4.2 seconds)
 5. Compare LatticeKrig and SHT using multiple stochastic components and plot Figures S3(e) and S3(f) (about 2377.3 seconds using 4 cores)
+
+### Figure S4 in Section S3.4
+Figure S4 validates the assumption of diagonal matrix $\Phi_p$. Here we take the annual case as an example to illustrate the reproduction. Assume that we have got the real-valued SHT coefficients "TDat.rsd.SHT" and         #
+their temporal dependence "TPhi.hat" by following lines 1-192 in code "Annual/Annual_SG.R". The total computational time is about 396.1 seconds.
+
+1. Calculate the residuals of autoregressive model (about 0.2 seconds)
+2. Calculate p-values of the first temporal lag of the cross-correlation and plot Figure S4(a) (about 395.9 seconds)
+
+
+
+
+
+
+
+
+
+
+
+
+
