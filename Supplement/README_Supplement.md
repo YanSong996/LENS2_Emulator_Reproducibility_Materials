@@ -30,6 +30,13 @@ Figure S4 validates the assumption of diagonal matrix $\Phi_p$. Here we take the
 Please refer to the reproduction of Figure 3 in Section 4.1.
 
 ### Figure S6 in Section S4.1.2
+Figure S6 illustrates the inference results of annual data obtained by HCBG. All the intermediate results can be found in sub-repository "Supplement/Huang/Annual/Outputs". Here we use outputs from https://github.com/hhuang90/stochastic_emulator 
+as initial values. The total computational time for ploting Figure S6 is about 113278.9 seconds without using the parallel. 
+
+1. Load 7 ensembles of annual data and necessary information for HCBG (about 4.6 seconds)
+2. Model the mean trend and temporal dependence at each grid point and plot Figures S6(a) (about 2.0 seconds for each grid point $(L_i,l_j)$. We provide the intermediate result "Res_hatrhophi.csv".)
+3. Evaluate mean trend and sd at each grid point and plot Figure S6(b) (about 723.9 seconds. We provide the intermediate result "Sig_Annual.csv".)
+4. Model the longitude dependence at each latitude and plot Figure S6(c) (about 10.2 seconds for each latitude $L_i$, $i=1,\ldots,192$. We provide the intermediate result "Res_longLO.csv".)
 
 
 
