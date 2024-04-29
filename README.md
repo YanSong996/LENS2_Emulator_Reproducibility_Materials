@@ -48,3 +48,12 @@ Figure 3 illustrates some inference results of the annual data. Assume that we w
 5. Do SHT with $Q=144$ for the stochastic component $Z_t^{(r)}(L_i,l_j)$ at each ensemble $r$ and time point $t$ (about 4.2 seconds for each ensemble $r$ and each time point $t$, $r=1,\ldots,7$ and $t=1,\ldots,86$. Without parallel, this step takes about 2528.4 seconds.)
 6. Calculate BIC values under different $Q$ values and plot Figure 3(c) (The major computation time is to calculate the inverse SHT with different values of $Q$. But this step takes time because it calculates the inverse SHT for each ensemble $r$, each time point $t$, and all candidates of $Q$. Take $Q=100$ as an example, which maximizes the computational time of inversing SHT in this step, it takes about 0.9 seconds for each $r$ and $t$. Without parallel, this step takes at most $0.9\times 7\times 86\times (9+21+21)=27631.8$ seconds. We provide the intermediate results "BIC_land.csv", "BIC_ocean.csv", "BICd_land.csv", and "BICd_ocean.csv".)
 7. Calculate $v^2(L_i,l_j)$ under $Q_l=35$ and $Q_o=69$ and plot Figure 3(d) (The major computational time in this step is to calculate the inverse SHT with $Q=35$ and $69$ for each ensemble $r$, time point $t$. Without paralle, this step takes about $(0.27+0.42)\times 7\times 86=415.38$ seconds. We provide the intermediate outputs "v2hat.csv".)
+
+### Figure 4 in Section 4.1
+Figure 4 illustrates the temporal and spatial dependence structures of the annual data in spectral domain. Assume that we keep all intermediate results of reproducing Figure 3. The total computational time for ploting Figure 4 is about 439.4 seconds. All the intermediate outputs can be found in sub-repository "Annual/Outputs".
+
+1. Do the real-valued transformation to SHT coefficients so that they are real-valued (about 1.4 seconds)
+2. Model the temporal dependence structure using an autoregressive model with order $P=1$ and plot Figure 4(a) (about 0.357 seconds)
+3. Model the spatial dependence by evaluating the covariance matrix of (read-valued) SHT coefficients and plot Figures 4(b) and 4(c) (about 127.1 seconds)
+4. Assess spatial models by selecting auto-covariance at a selected latitide and plot Figures 4(d) (about 155.3 seconds)
+5. As the same as the above item but use another latitude (about 155.3 seconds)
