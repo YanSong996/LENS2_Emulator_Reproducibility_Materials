@@ -39,7 +39,7 @@ Figures 2 and S2 are used to illustrate the performance of spherical harmonics t
 9. Calculate one set of stochastic component $Z_{69}^{(1)}(L_i,l_j)$, do SHT and inverse SHT, and plot Figure S2(b) and S2(d) (about 7.4 seconds)
 
 ### Figure 3 in Section 4.1
-Figure 3 illustrates some inference results of the annual data. Assume that we would use the intermediate results in item 2, then the total computational time without using parallel is about 63765.6 seconds. The detailed computational time is provided in each item below. We also give all the intermediate results in the sub-repository "Annual/Outputs".
+Figure 3 illustrates some inference results of the annual data. Assume that we would use the intermediate results in item 2, then the total computational time without using parallel is about 63765.6 seconds. The detailed computational time is provided in each item below. We also give all the intermediate results in the sub-repository "Annual/Outputs". Note that Figures 3-5 are all for annual data, so please do not clear the environment after reproducing Figure 3 if you want to reproduce Figures 4 and 5 as well.
 
 1. Load 10 ensembles of annual data and necessary information (about 11.0 seconds)
 2. Calculate $I_{fit}$ values under $R=2,\ldots,10$ and plot Figure 3(a) (Here we give the maximum computational time, about 10917.9 seconds, which is obtained by calculating $I_{fit}$ values under $R=10$ and using 10 cores in parallel. Then, the whole step will take no more than 98261.2 seconds. We provide the intermediate result "IfitwithRs.csv" so that readers could use it to plot Figure 3(a) directly if necessary.)
