@@ -62,7 +62,7 @@ Figure S10 illustrates inference results for stochastic components of the monthl
 Figures S11 and S12 illustrates the performance of the generated monthly emulations. Assume that we keep all the intermediate results of Figures S9 and S10. The total computational time is about 4426.7 seconds with 4 cores. All intermediate outputs are in sub-repository "Monthly/Outputs".
 
 1. Model the spatial dependence by evaluating the covariance matrix of (read-valued and Gaussianized) SHT coefficients (about 48.3 seconds)
-2. Calculate the covaraince matrix $\tilde{**U**}$ (about 0.3 seconds. We provide the intermediate result "U.mat")
+2. Calculate the covaraince matrix $\Check{**U**}$ (about 0.3 seconds. We provide the intermediate result "U.mat")
 3. Generate $R'=7$ ensembles of monthly emulations using 4 cores (about 2873.5 seconds)
 4. Calculate $I_{uq}$ values using 4 cores and plot Figures S11(a), S11(b), and S11(e) (about 1241.9 seconds. We provide intermediate results "Iuq_Tukey.csv" and "Iuq_noTukey.csv".)
 5. Calculate $WD_{S}$ values using 4 cores and plot Figures S11(c), S11(d), and S11(f) (about 262.7 seconds. We provide intermediate results "WD_time_Tukey.csv" and "WD_time_noTukey.csv".)
