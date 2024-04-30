@@ -68,8 +68,15 @@ Figures S11 and S12 illustrates the performance of the generated monthly emulati
 5. Calculate $WD_{S}$ values using 4 cores and plot Figures S11(c), S11(d), and S11(f) (about 262.7 seconds. We provide intermediate results "WD_time_Tukey.csv" and "WD_time_noTukey.csv".)
 6. Plot Figure S12 (about 0 seconds)
 
+### Figure S13 Section S4.2
+Figure S13 illustrates the performance of the generated monthly emulations by aggregating them to be annual emulations. Assume that we keep all the intermediate results of Figures S9-S12, especially the generated monthly emulations. The total computational time is about 745.4 seconds. All intermediate outputs are in sub-repository "Monthly/Aggregate".
 
-
+1. Aggregate monthly emulations to annual emulations (about 429.6 seconds)
+2. Load the annual simulations (about 5.2 seconds)
+3. Calculate $I_{uq}$ values and plot Figures S13(a) and S13(b) (about 139.2 seconds. We provide the intermediate result "Iuq_Monthly_to_Annual.csv".)
+4. Calculate $WD_S$ values and plot Figures S13(b) and S13(c) (about 42.3 seconds. We provide the intermediate result "WD_Monthly_to_Annual.csv".)
+5. Calculate $I_{fit}$ values and plot Figure S13(e) (about 129.1 seconds. We provide the intermediate result "Ifit_Monthly_to_Annual.csv".)
+6. Plot Figure S13(f) using "BIC_KM.csv" in "Monthly/Outputs" (about 0 seconds)
 
 
 
