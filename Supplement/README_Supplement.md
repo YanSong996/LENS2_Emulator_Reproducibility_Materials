@@ -48,12 +48,15 @@ Figure S9 illustrates inference results for deterministic components of the mont
 2. Model the deterministic components, evaluate mean trend $m_t(L_i,l_j)$ and sd $\sigma(L_i,l_j)$ for each grid point $(L_i,l_j)$, and plot Figure S9 (about 14.0 seconds for each grid point. We provide intermediate results "Res_Hatrho.csv", "Res_BetaAB.mat", and "Monthly_Sig.csv".)
 
 ### Figure S10 in Section S4.2
-Figure S10 illustrates inference results for stochastic components of the monthly data. Assume that we keep all the intermediate results of Figure S9. The total computational time is about  seconds without using the parallel. All intermediate outputs can be found in sub-repository "Monthly/Outputs".
+Figure S10 illustrates inference results for stochastic components of the monthly data. Assume that we keep all the intermediate results of Figure S9. The total computational time is about 237107.2 seconds without using the parallel. All intermediate outputs can be found in sub-repository "Monthly/Outputs".
 
 1. Calculate stochastic components $Z_t^{(r)}(L_i,l_j)$  by detrending and rescaling (about 19.8 seconds)
 2. Do SHT with $Q=144$ for the stochastic component at each ensemble $r$ and time point $t$ (about 4.2 seconds for each ensemble r and each time point t. Without using the parallel, it will take about $4.2\times 7\times (86\times 12)=30340.8 seconds.)
 3. Calculate BIC values under different $Q$ values and plot Figure S10(a) (The major computation time is for calculating the inverse SHT. But this step takes time because it calculates the inverse SHT for each ensemble $r$, each time point $t$, and all candidates of $Q$. Take Q=90 as an example, which maximizes the computational time of inversing SHT, it takes about 0.9 seconds for each ensemble $t$ and time point $t$. If we run this step without doing parallel, we would take at most $0.9\times 7\times (86\times 12)\times (8+11+11)=195048 seconds. We provide intermediate results "BIC_land.csv", "BIC_ocean.csv", "BICd_land.csv", and "BICd_ocean.csv".)
-4. Calculate v^2(L_i,l_j) under Ql=36 and Qo=70 and plot Figure S10(b) (about )
+4. Calculate v^2(L_i,l_j) under Ql=36 and Qo=70 and plot Figure S10(b) (The major computational time is to calculate the inverse SHT with $Q=36$ and $70$ for each $r$ and $t$. It will take about $0.8\times 7\times 86\times 12=5779.2$ seconds without the parallel. We provide the intermediate result "v2hat.csv".)
+5. Do the real-valued transformation to SHT coefficients so that they are real values (about 2.8 seconds)
+6. Test the Gaussianity of the real-valued coefficients (about 6.7 seconds)
+7. Model the temporal dependence structure using a Tukey g-and-h autoregressive model with order $P=1$ and plot Figure S10(c) (about 5909.9 seconds without using the parallel)
 
 
 
