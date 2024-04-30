@@ -42,7 +42,7 @@ as initial values. The total computational time for ploting Figure S6 is about 1
 Please refer to the reproduction of Figure 5 in Section 4.1.
 
 ### Figure S9 in Section S4.2
-Figure S9 illustrates inference results for deterministic components of the monthly data. All intermediate outputs can be found in sub-repository "Monthly/Outputs". The total computational time is about 774210.1 seconds without using the parallel.
+Figure S9 illustrates inference results for deterministic components of the monthly data. All intermediate outputs can be found in sub-repository "Monthly/Outputs". The total computational time is about 774210.1 seconds without using the parallel. Note that Figures S9-S13 are all for the monthly data, so please do not clear the environment after reproducing Figure S9 if you also want to reproduce Figures S10-S13.           
 
 
 
