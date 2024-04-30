@@ -56,7 +56,7 @@ Figure S10 illustrates inference results for stochastic components of the monthl
 4. Calculate v^2(L_i,l_j) under Ql=36 and Qo=70 and plot Figure S10(b) (The major computational time is to calculate the inverse SHT with $Q=36$ and $70$ for each $r$ and $t$. It will take about $0.8\times 7\times 86\times 12=5779.2$ seconds without the parallel. We provide the intermediate result "v2hat.csv".)
 5. Do the real-valued transformation to SHT coefficients so that they are real values (about 2.8 seconds)
 6. Test the Gaussianity of the real-valued coefficients (about 6.7 seconds)
-7. Model the temporal dependence structure using a Tukey g-and-h autoregressive model with order $P=1$ and plot Figure S10(c) (about 5909.9 seconds without using the parallel)
+7. Model the temporal dependence structure using a Tukey g-and-h autoregressive model with order $P=1$ and plot Figure S10(c) (about 5909.9 seconds without using the parallel. We provide intermediate results "bicp_noTukey.csv", "bicp_Tukey.csv", "Phihat_noTukey.csv", "Phihat_Tukey.csv", "rtc.csv", "Tukeyres.csv".)
 
 
 
