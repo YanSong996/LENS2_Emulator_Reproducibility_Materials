@@ -58,7 +58,13 @@ Figure S10 illustrates inference results for stochastic components of the monthl
 6. Test the Gaussianity of the real-valued coefficients (about 6.7 seconds)
 7. Model the temporal dependence structure using a Tukey g-and-h autoregressive model with order $P=1$ and plot Figure S10(c) (about 5909.9 seconds without using the parallel. We provide intermediate results "bicp_noTukey.csv", "bicp_Tukey.csv", "Phihat_noTukey.csv", "Phihat_Tukey.csv", "rtc.csv", "Tukeyres.csv".)
 
+### Figures S11 and S12 in Section S4.2
+Figures S11 and S12 illustrates the performance of the generated monthly emulations. Assume that we keep all the intermediate results of Figures S9 and S10. The total computational time is about second with 4 cores. All intermediate outputs are in sub-repository "Monthly/Outputs".
 
+1. Model the spatial dependence by evaluating the covariance matrix of (read-valued and Gaussianized) SHT coefficients (about 48.3 seconds)
+2. Calculate the covaraince matrix $\check{**U**}$ (about 0.3 seconds. We provide the intermediate result "U.mat")
+3. Generate $R'=7$ ensembles of monthly emulations using 4 cores (about 2873.5 seconds)
+4. Calculate $I_{uq}$ values using 4 cores and plot Figures S11(a), S11(b), and S11(e) (about 1241.9 seconds. We provide the intermediate result "Iuq_Tukey.csv", )
 
 
 
