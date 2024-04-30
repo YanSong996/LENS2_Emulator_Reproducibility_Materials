@@ -53,6 +53,7 @@ Figure S10 illustrates inference results for stochastic components of the monthl
 1. Calculate stochastic components $Z_t^{(r)}(L_i,l_j)$  by detrending and rescaling (about 19.8 seconds)
 2. Do SHT with $Q=144$ for the stochastic component at each ensemble $r$ and time point $t$ (about 4.2 seconds for each ensemble r and each time point t. Without using the parallel, it will take about $4.2\times 7\times (86\times 12)=30340.8 seconds.)
 3. Calculate BIC values under different $Q$ values and plot Figure S10(a) (The major computation time is for calculating the inverse SHT. But this step takes time because it calculates the inverse SHT for each ensemble $r$, each time point $t$, and all candidates of $Q$. Take Q=90 as an example, which maximizes the computational time of inversing SHT, it takes about 0.9 seconds for each ensemble $t$ and time point $t$. If we run this step without doing parallel, we would take at most $0.9\times 7\times (86\times 12)\times (8+11+11)=195048 seconds. We provide intermediate results "BIC_land.csv", "BIC_ocean.csv", "BICd_land.csv", and "BICd_ocean.csv".)
+4. Calculate v^2(L_i,l_j) under Ql=36 and Qo=70 and plot Figure S10(b) (about )
 
 
 
