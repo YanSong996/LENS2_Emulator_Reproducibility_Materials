@@ -1,5 +1,6 @@
 ##############  Wrapper file for sequentially implementing each figure in the Supplementary Materials ##############
 ###### Load necessary R packages and functions
+# R version 3.6.3
 library(R.matlab)
 library(nloptr)
 library(fpp2)
