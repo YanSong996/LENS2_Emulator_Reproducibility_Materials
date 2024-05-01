@@ -61,7 +61,7 @@ Figure 4 illustrates the temporal and spatial dependence structures of the annua
 ### Figure 5 in Section 4.1 (and Figures S7 and S8 in Section S4.1.3)
 Figures 5, S7, and S8 illustrate the performance of the generated annual emulations. Assume that we keep all intermediate results of reproducing Figures 3 and 4. The total computational time for ploting Figures 5, S7, and S8 is about 369.0 seconds. All the intermediate outputs can be found in sub-repository "Annual/Outputs".
 
-1. Caculate the covaraince matrix $$\tilde{**U**}$$ (about 0.4 seconds. We provide the intermediate result "U.mat".)
+1. Caculate the covaraince matrix $\tilde{**U**}$ (about 0.4 seconds. We provide the intermediate result "U.mat".)
 2. Do Cholescky decompostion on $\tilde{**U**}$ (about 0.6 seconds)
 3. Generate $R'=7$ ensembles of annual emulations using 4 cores (about 207.8 seconds)
 4. Calculate $I_{uq}$ values using 4 cores and plot Figures 5(a) and 5(b) (about 119.1 seconds. We provide the intermediate result "Iuq_axialnon.csv".)
@@ -70,7 +70,24 @@ Figures 5, S7, and S8 illustrate the performance of the generated annual emulati
 7. Compare time series of annual emulations with those of simulations and plot Figures S7(e) and S7(f) (0 seconds)
 8. Compare periodograms of emulations with those of simulations and plot Figure S8(a) (or S8(b)) (about 1.4 seconds)
 
+### Figures 6 and 7 in Section 4.2 (and Figures S14 and S15 in Section S4.3)
+Figures 6 and 7 illustrate the performance of the generated daily emulations. These two figures take about 6199.6 seconds using the parallel with 4 cores. The inference process, which should be done before generating emulations, is illustrated in Figure S14. This figure takes about 2784269 seconds without using the parallel. Figure S15 just shows daily time series. All these four plots are for daily data. The order should be Figure S14, 6, 7 and S15. Therefore, we give the entire procedure here together. All intermediate outputs are in sub-repository "Daily/Outputs".  
 
-
+1. Load 7 ensembles of daily data and necessary information (about 116.5 seconds)
+2. Model the deterministic components, evaluate $m_t(L_i,l_j)$ and $\sigma(L_i,l_j)$ for each grid point $(L_i,l_j)$, and plot Figures S14(a) and S14(b) (about 39.6 seconds for each $(L_i,l_j)$. Without the parallel, this steop takes about $39.6\times 192\times 288=2191878$ seconds. We provide intermediate results "BICforM.csv", "Res_Hatrho.csv", "BetaAB.mat", and "Daily_Sig.csv".)
+3. Calculate stochastic components $Z_t^{(r)}(L_i,l_j)$ by detrending and rescaling (about 32.2 seconds)
+4. Do SHT with $Q=144$ for the stochastic component at each ensemble $r$ and time point $t$ (about 4.2 seconds for each $r$ and each $t$. Without the parallel, it takes 4.2*7*(5*365)=53655 seconds.)
+5. Calculate BIC values under different Q values and plot Figure S14(c) (The major computation time is for calculating the inverse SHT. But this step takes time because it calculates the inverse SHT for $r$, each $t$, and all candidates of $Q$. Take $Q=90$ as an example, which maximizes the computational time of inversing SHT, it takes about 0.9 seconds for each $r$ and $t$. If we run this step without doing parallel, we would take at most $0.9\times 7\times (365\times5)\times(8+11+11)=344925$ seconds. We provide intermeidate results "BIC_land.csv", "BIC_ocean.csv", "BICd_land.csv", and "BICd_ocean.csv".)
+6. Calculate $v^2(L_i,l_j)$ under $Q_l=36$ and $Q_o=68$ and plot Figure S14(d) (The major computational time in this step is to calculate the inverse SHT with $Q=36$ and $68$ for each $r$ and $t$. It will take about $0.8\times 7\times 365\times 5=10220$ seconds without the parallel. We provide the intermediate result "v2hat_do.csv".)
+7. Do the real-valued transformation to SHT coefficients so that they are real values (about 4.2 seconds)
+8. Test the normality of coefficients (about 11.5 seconds)
+9. Choose the order of TGH autoregressive model for (non-Gaussian) time series at each coefficient $q$ using BIC and plot Figure S14(e) (about 166635.3 seconds without the parallel. We provide intermediate results "bicp_noTukey.csv" and "bicp_Tukey.csv".)
+10. Model the temporal dependence structure using a Tukey g-and-h autoregressive model with order $P=1$ and plot Figure S14(f) (about 16791.3 seconds without the parallel. We provide the intermediate result "Tukeyres.csv".)
+11. Model the spatial dependence by evaluating the covariance matrix of (read-valued and Gaussianized) SHT coefficients (about 80.4 seconds)
+12. Calculate the covaraince matrix $\check{**U**}$  (about 0.3 seconds. We provide the intermediate result "U.mat".)
+13. Generate $R'=7$ ensembles of daily emulations using 4 cores (about 3636.2 seconds)
+14. Calculate $I_{uq}$ values using 4 cores and plot Figures 6(a), 6(b), and 6(e) (about 2352.8 seconds. We provide intermediate results "Iuq_noTukey.csv" and "Iuq_Tukey.csv".)
+15. Calculate $WD_S$ values using 4 cores and plot Figures 6(c), 6(d), and 6(f) (about 129.9 seconds. We provide intermediate results "WD_time_noTukey.csv" and "WD_time_Tukey.csv")
+16. Plot Figures 7 and S15 (about 0 second)
 
 
