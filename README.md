@@ -67,7 +67,7 @@ Figures 5, S7, and S8 illustrate the performance of the generated annual emulati
 4. Calculate $I_{uq}$ values using 4 cores and plot Figures 5(a) and 5(b) (about 119.1 seconds. We provide the intermediate result "Iuq_axialnon.csv".)
 5. Calculate $WD_S$ values using 4 cores and plot Figures 5(c) and 5(d) (about 31.1 seconds. We provide the intermediate result "WD_time.csv".)
 6. Compare ensemble means and sds of annual emulations with those of simulations and plot Figures S7(a) and S7(c) (or Figures S7(b) and S7(d)) (about 2.4 seconds)
-7. Compare time series of annual emulations with those of simulations and plot Figures S7(e) and S7(f) (0 seconds)
+7. Compare time series of annual emulations with those of simulations and plot Figures S7(e) and S7(f) (0 second)
 8. Compare periodograms of emulations with those of simulations and plot Figure S8(a) (or S8(b)) (about 1.4 seconds)
 
 ### Figures 6 and 7 in Section 4.2 (and Figures S14 and S15 in Section S4.3)
