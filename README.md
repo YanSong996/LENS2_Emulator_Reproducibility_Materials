@@ -1,5 +1,5 @@
 # Reproducibility Instruction
-This file documents the artifacts associated with the article (i.e., the data and code supporting the computational findings) and describes how to reproduce the findings. Please first download and extract the provided "LENS2_Emulator_Reproducibility_Materials.zip", and then set your working directory to the folder "LENS2_Emulator_Reproducibility_Materials". To reproduce all figures and results in the main manuscript, please follow the "Wrapper.R" file.
+This file documents the artifacts associated with the article (i.e., the data and code supporting the computational findings) and describes how to reproduce the findings. Please first download and extract the provided "LENS2_Emulator_Reproducibility_Materials.zip", and then set your working directory to the folder "LENS2_Emulator_Reproducibility_Materials". To reproduce all figures and results in the main manuscript, please follow the "Wrapper.R" file. The computation time for each step as reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 
 ## Step 1. Download and process the data in sub-repository "LENS2_Data"
