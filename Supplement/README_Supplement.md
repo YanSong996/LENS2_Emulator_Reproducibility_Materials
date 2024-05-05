@@ -2,7 +2,7 @@
 This file documents the artifacts associated with the Supplementary Materials and describes how to reproduce the findings. Please first download and extract the provided "LENS2_Emulator_Reproducibility_Materials.zip", and then set your working directory to the folder "LENS2_Emulator_Reproducibility_Materials". To reproduce all figures and results in the Supplementary Materials, please follow the "Wrapper_Supplement.R" file. The computation time for each step as reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 ## Step 1. Download and process the data in sub-repository "LENS2_Data"
-Please follow the README.md file in the sub-repository "LENS2_Data" to download the raw data, process and store them using file “Data_treatment.R” in the "LENS2_Data". Processing montly and annual data together for each ensemble takes about 63 seconds. Processing daily data for each ensemble takes about 32.5 seconds. 
+Please follow the README.md file in the sub-repository "LENS2_Data" to download the raw data, process and store them using file “Data_treatment.R” in the "LENS2_Data". Processing montly and annual data together for each ensemble takes about 1.0 minute. Processing daily data for each ensemble takes about 32.5 seconds. 
 
 ## Step 2. Reproduce each section and figure sequentially
 ### Figure S1 in Section S2
@@ -12,19 +12,19 @@ Please refer to the reproduction of Figure 1 in Section 2.
 Please refer to the reproduction of Figure 2 in Section 3.2.1.
 
 ### Figure S3 in Section S3.2.4
-Figure S3 illustrates the approximation performance of LatticeKrig and SHT, where Figures S3(d) and S3(b) are Figures 2(e) and 2(f), respectively. More details about choosing tuning parameters can be found in "Supplement/FigureS3/LatticeKrig_Annual.R" All intermediate outputs can be found in sub-repository "Supplement/FigureS3/Outputs". The total computational time for ploting Figure S3 (excluding Figures S3(d) and S3(b)) is about 2569.2 seconds.
+Figure S3 illustrates the approximation performance of LatticeKrig and SHT, where Figures S3(d) and S3(b) are Figures 2(e) and 2(f), respectively. More details about choosing tuning parameters can be found in "Supplement/FigureS3/LatticeKrig_Annual.R" All intermediate outputs can be found in sub-repository "Supplement/FigureS3/Outputs". The total computational time for ploting Figure S3 (excluding Figures S3(d) and S3(b)) is about 42.8 minutes.
 
 1. Load 7 ensembles of annual data and necessary information (about 5.2 seconds)
 2. Calculate one set of stochastic component $Z_9^{(1)}(L_i,l_j)$ (about 2.4 seconds)
-3. Use LatticeKrig with nlevel=5 to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure S3(a) (about 180.1 seconds)
+3. Use LatticeKrig with nlevel=5 to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure S3(a) (about 3.0 minutes)
 4. Use SHT with Q=58 to approximate $Z_9^{(1)}(L_i,l_j)$ and plot Figure S3(c) (about 4.2 seconds)
-5. Compare LatticeKrig and SHT using multiple stochastic components and plot Figures S3(e) and S3(f) (about 2377.3 seconds using 4 cores)
+5. Compare LatticeKrig and SHT using multiple stochastic components and plot Figures S3(e) and S3(f) (about 39.6 minutes using 4 cores)
 
 ### Figure S4 in Section S3.4
-Figure S4 validates the assumption of diagonal matrix $\Phi_p$. Here we take the annual case as an example to illustrate the reproduction. Assume that we have got the real-valued SHT coefficients "TDat.rsd.SHT" and their temporal dependence "TPhi.hat" by following lines 1-192 in code "Annual/Annual_SG.R". The total computational time is about 396.1 seconds.
+Figure S4 validates the assumption of diagonal matrix $\Phi_p$. Here we take the annual case as an example to illustrate the reproduction. Assume that we have got the real-valued SHT coefficients "TDat.rsd.SHT" and their temporal dependence "TPhi.hat" by following lines 1-192 in code "Annual/Annual_SG.R". The total computational time is about 6.6 minutes.
 
 1. Calculate the residuals of autoregressive model (about 0.2 seconds)
-2. Calculate p-values of the first temporal lag of the cross-correlation and plot Figure S4(a) (about 395.9 seconds)
+2. Calculate p-values of the first temporal lag of the cross-correlation and plot Figure S4(a) (about 6.6 minutes)
 
 ### Figure S5 in Section S4.1.1
 Please refer to the reproduction of Figure 3 in Section 4.1.
@@ -35,7 +35,7 @@ as initial values. The total computational time for ploting Figure S6 is about 3
 
 1. Load 7 ensembles of annual data and necessary information for HCBG (about 4.6 seconds)
 2. Model the mean trend and temporal dependence at each grid point and plot Figures S6(a) (about 2.0 seconds for each grid point $(L_i,l_j)$. We provide the intermediate result "Res_hatrhophi.csv".)
-3. Evaluate mean trend and sd at each grid point and plot Figure S6(b) (about 723.9 seconds. We provide the intermediate result "Sig_Annual.csv".)
+3. Evaluate mean trend and sd at each grid point and plot Figure S6(b) (about 12.1 minutes. We provide the intermediate result "Sig_Annual.csv".)
 4. Model the longitude dependence at each latitude and plot Figure S6(c) (about 10.2 seconds for each latitude $L_i$, $i=1,\ldots,192$. We provide the intermediate result "Res_longLO.csv".)
 
 ### Figures S7 and S8 in Section S4.1.3
@@ -63,20 +63,20 @@ Figures S11 and S12 illustrates the performance of the generated monthly emulati
 
 1. Model the spatial dependence by evaluating the covariance matrix of (read-valued and Gaussianized) SHT coefficients (about 48.3 seconds)
 2. Calculate the covaraince matrix $\Check{**U**}$ (about 0.3 seconds. We provide the intermediate result "U.mat")
-3. Generate $R'=7$ ensembles of monthly emulations using 4 cores (about 2873.5 seconds)
-4. Calculate $I_{uq}$ values using 4 cores and plot Figures S11(a), S11(b), and S11(e) (about 1241.9 seconds. We provide intermediate results "Iuq_Tukey.csv" and "Iuq_noTukey.csv".)
-5. Calculate $WD_{S}$ values using 4 cores and plot Figures S11(c), S11(d), and S11(f) (about 262.7 seconds. We provide intermediate results "WD_time_Tukey.csv" and "WD_time_noTukey.csv".)
-6. Plot Figure S12 (about 0 seconds)
+3. Generate $R'=7$ ensembles of monthly emulations using 4 cores (about 47.9 minutes)
+4. Calculate $I_{uq}$ values using 4 cores and plot Figures S11(a), S11(b), and S11(e) (about 20.7 minutes. We provide intermediate results "Iuq_Tukey.csv" and "Iuq_noTukey.csv".)
+5. Calculate $WD_{S}$ values using 4 cores and plot Figures S11(c), S11(d), and S11(f) (about 4.4 minutes. We provide intermediate results "WD_time_Tukey.csv" and "WD_time_noTukey.csv".)
+6. Plot Figure S12 (about 0 second)
 
 ### Figure S13 Section S4.2
-Figure S13 illustrates the performance of the generated monthly emulations by aggregating them to be annual emulations. Assume that we keep all the intermediate results of Figures S9-S12, especially the generated monthly emulations. The total computational time is about 745.4 seconds. All intermediate outputs are in sub-repository "Monthly/Aggregate".
+Figure S13 illustrates the performance of the generated monthly emulations by aggregating them to be annual emulations. Assume that we keep all the intermediate results of Figures S9-S12, especially the generated monthly emulations. The total computational time is about 12.4 minutes. All intermediate outputs are in sub-repository "Monthly/Aggregate".
 
-1. Aggregate monthly emulations to annual emulations (about 429.6 seconds)
+1. Aggregate monthly emulations to annual emulations (about 7.2 minutes)
 2. Load the annual simulations (about 5.2 seconds)
-3. Calculate $I_{uq}$ values and plot Figures S13(a) and S13(b) (about 139.2 seconds. We provide the intermediate result "Iuq_Monthly_to_Annual.csv".)
+3. Calculate $I_{uq}$ values and plot Figures S13(a) and S13(b) (about 2.3 minutes. We provide the intermediate result "Iuq_Monthly_to_Annual.csv".)
 4. Calculate $WD_S$ values and plot Figures S13(b) and S13(c) (about 42.3 seconds. We provide the intermediate result "WD_Monthly_to_Annual.csv".)
-5. Calculate $I_{fit}$ values and plot Figure S13(e) (about 129.1 seconds. We provide the intermediate result "Ifit_Monthly_to_Annual.csv".)
-6. Plot Figure S13(f) using "BIC_KM.csv" in "Monthly/Outputs" (about 0 seconds)
+5. Calculate $I_{fit}$ values and plot Figure S13(e) (about 2.2 minutes. We provide the intermediate result "Ifit_Monthly_to_Annual.csv".)
+6. Plot Figure S13(f) using "BIC_KM.csv" in "Monthly/Outputs" (about 0 second)
 
 
 
